@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.game_hunters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #2680bf;
+}
+.game_hunters .btn {
+  font-size: 24px;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 20px 120px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.game_hunters .form_and_refresh .iterate {
+  margin-top: 20px;
+}
+.game_hunters form {
+  margin-bottom: 20px;
+}
+.game_hunters form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+.game_hunters .fild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 300px;
+  height: auto;
+  background: #fff;
+  border: 5px solid #282828;
+}
+.game_hunters .fild .block {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border: 1px solid #282828;
+}
+@media (max-width: 768px) {
+  .game_hunters {
+    padding: 10px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .game_hunters .btn {
+    padding: 10px 60px;
+  }
+  .game_hunters .fild {
+    margin-top: 30px;
+  }
+}

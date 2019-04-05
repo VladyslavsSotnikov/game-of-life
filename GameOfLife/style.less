@@ -1,0 +1,67 @@
+	body{
+	margin: 0;
+	padding: 0;
+
+}
+.game_hunters{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	background-color: #2680bf;
+	.btn{
+		font-size: 24px;
+		color:#fff;
+		border:2px solid #fff;
+		padding: 20px 120px;
+		text-transform: uppercase;
+		font-weight: 600;
+		cursor: pointer;	
+	}
+	.form_and_refresh{
+		.iterate{
+			margin-top: 20px;
+		}
+	}
+	form{
+		margin-bottom: 20px;
+		input{
+			box-sizing:border-box;
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+		}
+	}
+	.fild{
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 300px;
+		height:auto;//250px;
+		background: #fff;
+		border:5px solid #282828;
+		.block{
+			box-sizing: border-box;
+			width: 300px/10;	
+			height:300px/10;	
+			background-color: #ccc;
+			border:1px solid #282828;
+		}
+	}
+}
+
+@media  (max-width: 768px){
+	.game_hunters{
+		padding: 10px 0;
+		flex-direction: column;
+		justify-content:flex-start;
+		.btn{
+			padding: 10px 60px;
+		}
+		.fild{
+			margin-top: 30px;
+		}
+	}
+}
